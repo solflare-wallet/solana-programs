@@ -1,0 +1,11 @@
+{
+    "name": "Solana Token List",
+    "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/solana/info/logo.png",
+    "keywords": [
+      "solana",
+      "spl"
+    ],
+    "tags": {},
+    "timestamp": "2021-03-03T19:57:21+0000",
+    "programs": []
+}
