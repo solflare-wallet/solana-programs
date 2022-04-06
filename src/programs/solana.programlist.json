@@ -1,11 +1,648 @@
 {
-    "name": "Solana Token List",
-    "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/solana/info/logo.png",
-    "keywords": [
-      "solana",
-      "spl"
-    ],
-    "tags": {},
-    "timestamp": "2021-03-03T19:57:21+0000",
-    "programs": []
+  "name": "Solana Token List",
+  "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/solana/info/logo.png",
+  "keywords": [
+    "solana",
+    "spl"
+  ],
+  "tags": {},
+  "timestamp": "2021-03-03T19:57:21+0000",
+  "programs": [
+    {
+      "chainId": 101,
+      "address": "AddressMap111111111111111111111111111111111",
+      "name": "Address Map Program",
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+      "tags": [
+        "native"
+      ],
+      "extensions": {
+        "website": "https://solana.com",
+        "github": "https://github.com/solana-labs/solana-program-library",
+        "imageUrl": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+        "description": "Solana Address Map Program"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "Config1111111111111111111111111111111111111",
+      "name": "Config Program",
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+      "tags": [
+        "native"
+      ],
+      "extensions": {
+        "website": "https://solana.com",
+        "github": "https://github.com/solana-labs/solana-program-library",
+        "imageUrl": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+        "description": "Solana Config Program"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "Stake11111111111111111111111111111111111111",
+      "name": "Stake Program",
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+      "tags": [
+        "native"
+      ],
+      "extensions": {
+        "website": "https://solana.com",
+        "github": "https://github.com/solana-labs/solana-program-library",
+        "imageUrl": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+        "description": "Solana Stake Program"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "11111111111111111111111111111111",
+      "name": "System Program",
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+      "tags": [
+        "native"
+      ],
+      "extensions": {
+        "website": "https://solana.com",
+        "github": "https://github.com/solana-labs/solana-program-library",
+        "imageUrl": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+        "description": "Solana System Program"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "Vote111111111111111111111111111111111111111",
+      "name": "Vote Program",
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+      "tags": [
+        "native"
+      ],
+      "extensions": {
+        "website": "https://solana.com",
+        "github": "https://github.com/solana-labs/solana-program-library",
+        "imageUrl": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+        "description": "Solana Vote Program"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "KeccakSecp256k11111111111111111111111111111",
+      "name": "Secp256k1 Program",
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+      "tags": [
+        "native"
+      ],
+      "extensions": {
+        "website": "https://solana.com",
+        "github": "https://github.com/solana-labs/solana-program-library",
+        "imageUrl": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4",
+        "description": "Solana Secp256k1 Program"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "name": "Associated Token Program",
+      "tags": [
+        "Native"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "Feat1YXHhH6t1juaWF74WLcfv4XoNocjXA6sPWHNgAse",
+      "name": "Feature Proposal Program",
+      "tags": [
+        "Native"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "LendZqTs7gn5CTSJU1jWKhKuVpjJGom45nnwPb2AMTi",
+      "name": "Lending Program",
+      "tags": [
+        "Native"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "Memo1UhkJRfHyvLMcVucJwxXeuD728EqVDDwQDxFMNo",
+      "name": "Memo Program",
+      "tags": [
+        "Native"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+      "name": "Memo Program v2",
+      "tags": [
+        "Native"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "namesLPneVptA9Z5rqUDD9tMTWEJwofgaYwp8cawRkX",
+      "name": "Name Service Program",
+      "tags": [
+        "Native"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+      "name": "Stake Pool Program",
+      "tags": [
+        "Native"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "SwaPpA9LAaLfeLi3a68M4DjnLqgtticKg6CnyNwgAC8",
+      "name": "Swap Program",
+      "tags": [
+        "Native"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "name": "Token Program",
+      "tags": [
+        "Native"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+      "name": "Token Metadata Program",
+      "tags": [
+        "Native"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "vau1zxA2LbssAUEF7Gpw91zMM1LvXrvpzJtmZ58rPsn",
+      "name": "Token Vault Program",
+      "tags": [
+        "Native"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "C64kTdg1Hzv5KoQmZrQRcm2Qz7PkxtFBgw7EpFhvYn8W",
+      "name": "Acumen Program",
+      "tags": [
+        "Acumen"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "WvmTNLpGMVbwJVYztYL4Hnsy82cJhQorxjnnXcRm3b6",
+      "name": "Bonfida Pool Program",
+      "tags": [
+        "Bonfida"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "BrEAK7zGZ6dM71zUDACDqJnekihmwF15noTddWTsknjC",
+      "name": "Break Solana Program",
+      "tags": [
+        "Break Solana"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "GqTPL6qRf5aUuqscLh8Rg2HTxPUXfhhAXDptTLhp1t2J",
+      "name": "Mango Governance Program",
+      "tags": [
+        "Mango"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "7sPptkymzvayoSbLXzBsXEF8TSf3typNnAWkrKrDizNb",
+      "name": "Mango ICO Program",
+      "tags": [
+        "Mango"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "JD3bq9hGdy38PuWQ4h2YJpELmHVGPPfFSuFkpzAd9zfu",
+      "name": "Mango Program v1",
+      "tags": [
+        "Mango"
+      ],
+      "logoURI": "/images/tokens/MangoV3.svg"
+    },
+    {
+      "chainId": 101,
+      "address": "5fNfvyp5czQVX77yoACa3JJVEhdRaWjPuazuWgjhTqEH",
+      "name": "Mango Program v2",
+      "tags": [
+        "Mango"
+      ],
+      "logoURI": "/images/tokens/MangoV3.svg"
+    },
+    {
+      "chainId": 101,
+      "address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
+      "name": "Mango Program v3",
+      "tags": [
+        "Mango"
+      ],
+      "logoURI": "/images/tokens/MangoV3.svg",
+      "extensions": {
+        "parserPath": "/src/programs/mangoV3InstructionParser.js"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+      "name": "Marinade Staking Program",
+      "tags": [
+        "Marinade"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "MERLuDFBMmsHnsBPZw2sDQZHvXFMwp8EdjudcU2HKky",
+      "name": "Mercurial Stable Swap Program",
+      "tags": [
+        "Mercurial"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "p1exdMJcjVao65QdewkaZRUnU6VPSXhus9n2GzWfh98",
+      "name": "Metaplex Program",
+      "tags": [
+        "Metaplex"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "auctxRXPeJoc4817jDhf4HbjnhEcr1cCXenosMhK5R8",
+      "name": "NFT Auction Program",
+      "tags": [
+        "NFT Auction"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "cndyAnrLdpjq1Ssp1z8xxDsB8dxe7u4HL5Nxi2K5WXZ",
+      "name": "NFT Candy Machine Program",
+      "tags": [
+        "NFT Candy Machine"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "DjVE6JNiYqPL2QXyCUUh8rNjHrbz9hXHNYt99MQ59qw1",
+      "name": "Orca Swap Program v1",
+      "tags": [
+        "Orca"
+      ],
+      "logoURI": "https://www.orca.so/static/media/orca.0284041e.svg"
+    },
+    {
+      "chainId": 101,
+      "address": "9W959DqEETiGZocYWCQPaJ6sBmUzgfxXfqGeTEdp3aQP",
+      "name": "Orca Swap Program v2",
+      "tags": [
+        "Orca"
+      ],
+      "logoURI": "https://www.orca.so/static/media/orca.0284041e.svg",
+      "extensions": {
+        "parserPath": "/src/programs/orcaSwapV2Parser.js"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "82yxjeMsvaURa4MbZZ7WZZHfobirZYkH1zF8fmeGtyaQ",
+      "name": "Orca Aquafarm Program",
+      "tags": [
+        "Orca"
+      ],
+      "logoURI": "https://www.orca.so/static/media/orca.0284041e.svg"
+    },
+    {
+      "chainId": 101,
+      "address": "Port7uDYB3wk6GJAw4KT1WpTeMtSu9bTcChBHkX2LfR",
+      "name": "Port Finance Program",
+      "tags": [],
+      "logoURI": "Port"
+    },
+    {
+      "chainId": 101,
+      "address": "FsJ3A3u2vn5cTVofAjvy6y5kwABJAqYWpe4975bi2epH",
+      "name": "Pyth Oracle Program",
+      "tags": [],
+      "logoURI": "Pyth"
+    },
+    {
+      "chainId": 101,
+      "address": "QMMD16kjauP5knBwxNUJRZ1Z5o3deBuFrqVjBVmmqto",
+      "name": "Quarry Merge Mine",
+      "tags": [
+        "Quarry"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "QMNeHCGYnLVDn1icRAfQZpjPLBNkfGbSKRB83G5d8KB",
+      "name": "Quarry Mine",
+      "tags": [
+        "Quarry"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "QMWoBmAyJLAsA1Lh9ugMTw2gciTihncciphzdNzdZYV",
+      "name": "Quarry Mint Wrapper",
+      "tags": [
+        "Quarry"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "QRDxhMw1P2NEfiw5mYXG79bwfgHTdasY2xNP76XSea9",
+      "name": "Quarry Redeemer",
+      "tags": [
+        "Quarry"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "QREGBnEj9Sa5uR91AV8u3FxThgP5ZCvdZUW2bHAkfNc",
+      "name": "Quarry Registry",
+      "tags": [
+        "Quarry"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+      "name": "Raydium AMM Program",
+      "tags": [
+        "Raydium"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4",
+      "extensions": {
+        "parserPath": "/src/programs/raydiumAMMParser.js"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "9HzJyW1qZsEiSfMUf6L2jo3CcTKAyBmSyKdwQeYisHrC",
+      "name": "Raydium IDO Program",
+      "tags": [
+        "Raydium"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr",
+      "name": "Raydium Liquidity Pool Program v1",
+      "tags": [
+        "Raydium"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "27haf8L6oxUeXrHrgEgsexjSY5hbVUWEmvv9Nyxg8vQv",
+      "name": "Raydium Liquidity Pool Program v2",
+      "tags": [
+        "Raydium"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "EhhTKczWMGQt46ynNeRX1WfeagwwJd7ufHvCDjRxjo5Q",
+      "name": "Raydium Staking Program",
+      "tags": [
+        "Raydium"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "9KEPoZmtHUrBbhWN1v1KWLMkkvwY6WLtAVUCPRtRjP4z",
+      "name": "Raydium Staking Program",
+      "tags": [
+        "Raydium"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "routeUGWgWzqBWFcrCfv8tritsqukccJPu3q5GPP3xS",
+      "name": "Raydium Staking Program",
+      "tags": [
+        "Raydium"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "Crt7UoUR6QgrFrN7j8rmSQpUTNWNSitSwWvsWGf1qZ5t",
+      "name": "Saber Router Program",
+      "tags": [
+        "Saber"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "SSwpkEEcbUqx4vtoEByFjSkhKdCT862DNVb52nZg1UZ",
+      "name": "Saber Stable Swap Program",
+      "tags": [
+        "Saber"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "BJ3jrUzddfuSrZHXSCxMUUQsjKEyLmuuyZebkcaFp2fg",
+      "name": "Serum Dex Program v1",
+      "tags": [
+        "Serum"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o",
+      "name": "Serum Dex Program v2",
+      "tags": [
+        "Serum"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin",
+      "name": "Serum Dex Program v3",
+      "tags": [
+        "Serum"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "22Y43yTVxuUkoRKdm9thyRhQ3SdgQS7c7kB6UNCiaczD",
+      "name": "Serum Swap Program",
+      "tags": [
+        "Serum"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+      "name": "Solend Program",
+      "tags": [
+        "Solend"
+      ],
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SLNDpmoWTVADgEdndyvWzroNL7zSi1dF9PC3xHGtPwp/logo.png",
+      "extensions": {
+        "parserPath": "/src/programs/solendLendingInstructionParser.js"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "CrX7kMhLC3cSsXJdT7JDgqrRVWGnUpX3gfEfxxU2NVLi",
+      "name": "Lido for Solana Program",
+      "tags": [
+        "Solido"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "SSwpMgqNDsyV7mAgN9ady4bDVu5ySjmmXejXvy2vLt1",
+      "name": "Step Finance Swap Program",
+      "tags": [
+        "Step"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "DtmE9D2CSB4L5D6A15mraeEjrGMm6auWVzgaD8hK2tZM",
+      "name": "Switchboard Oracle Program",
+      "tags": [
+        "Switchboard"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "WormT3McKhFJ2RkiGpdw9GKvNCrB2aB54gb2uV9MfQC",
+      "name": "Wormhole",
+      "tags": [
+        "Wormhole"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "CJsLwbP1iu5DuUikHEJnLfANgKy6stB2uFgvBBHoyxwz",
+      "name": "Solanart Program",
+      "tags": [
+        "Solanart"
+      ],
+      "logoURI": "/images/tokens/Solanart.svg",
+      "extensions": {
+        "parserPath": "/src/programs/solanartInstructionParser.js"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "4MNPdKu9wFMvEeZBMt3Eipfs5ovVWTJb31pEXDJAAxX5",
+      "name": "Unknown program",
+      "tags": [
+        "Unknown"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "4bcFeLv4nydFrsZqV5CgwCVrPhkQKsXtzfy2KyMz7ozM",
+      "name": "Tulip program",
+      "tags": [
+        "Tulip Garden"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/82137467?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "7vxeyaXGLqcp66fFShqUdHxdacp4k4kwUpRSSeoZLCZ4",
+      "name": "Solfarm Vault program",
+      "tags": [
+        "Solfarm"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/82137467?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "6UQLqKYWqErHqdsX6WtANQsMmvfKtWNuSSRj6ybg5in3",
+      "name": "Solflare NFT program",
+      "tags": [
+        "Solflare"
+      ],
+      "logoURI": "/assets/logo-icon.26659b6d.svg",
+      "extensions": {
+        "parserPath": "/src/programs/solflareNFTInstructionParser.js"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "BYBvC81rwmsKYDRzUGqYBrkrh9AsDUi3b2TXHhwz6e7t",
+      "name": "Solflare Swap program",
+      "tags": [
+        "Solflare"
+      ],
+      "logoURI": "/assets/logo-icon.26659b6d.svg",
+      "extensions": {
+        "parserPath": "/src/programs/solflareSwapInstructionParser.js"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "SLrSmK5ykEhdLkZH8mEsrZsGtDvzrQLKYSwy7PVKQoj",
+      "name": "Solrise program",
+      "tags": [
+        "Solrise"
+      ],
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr/logo.png",
+      "extensions": {
+        "parserPath": "/src/programs/solriseInstructionParser.js"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "JUP2jxvXaqu7NQY1GmNF4m1vodw12LVXYxbFL2uJvfo",
+      "name": "Jupiter Aggregator v2",
+      "tags": [
+        "Jupiter"
+      ],
+      "logoURI": "/images/tokens/Jupiter.jpeg",
+      "extensions": {
+        "parserPath": "/src/programs/jupiterInstructionParser.js"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "M2mx93ekt1fmXSVkTrUL9xVFHkmME8HTUi5Cyc5aF7K",
+      "name": "Magic Eden Program",
+      "tags": [
+        "Magic Eden"
+      ],
+      "logoURI": "/images/tokens/MagicEden.png"
+    }
+  ]
 }

@@ -1,5 +1,6 @@
 import { fetch } from 'cross-fetch';
 import tokenlist from './../programs/solana.programlist.json';
+import { ParserFactory } from './parserFactory';
 
 export enum ENV {
     MainnetBeta = 101,
@@ -10,6 +11,7 @@ export enum ENV {
 export enum Strategy {
     GitHub = 'GitHub',
     Static = 'Static',
+    Localhost = 'localhost',
     // Solana = 'Solana',
     // CDN = 'CDN',
 }
@@ -33,17 +35,18 @@ export interface ProgramInfo {
     readonly logoURI?: string;
     readonly tags?: string[];
     readonly extensions?: ProgramExtension;
+    parserFactory?: ParserFactory;
 }
 
 export interface ProgramExtension {
     readonly website?: string;
-    readonly address?: string;
+    readonly parserPath?: string;
     readonly github?: string;
     readonly imageUrl?: string;
     readonly description?: string;
 }
 
-export type ProgramInfoMap = { [chainId: number]: ProgramInfo };
+export type ProgramInfoMap = { [address: string]: ProgramInfo };
 
 export const CLUSTER_SLUGS: { [chain: string]: ENV } = {
     'mainnet-beta': ENV.MainnetBeta,
@@ -72,11 +75,21 @@ export class StaticProgramListResolutionStrategy implements ProgramListResolutio
     };
 }
 
+export class LocalhostProgramListResolutionStrategy implements ProgramListResolutionStrategy {
+    readonly repositories: string[] = [
+        'http://localhost:8080',
+    ];
+
+    resolve = () => {
+        return queryJsonFiles(this.repositories);
+    };
+}
+
 const queryJsonFiles = async (files: string[]) => {
     const responses: ProgramListItem[] = (await Promise.all(
         files.map(async (repo) => {
             try {
-                const response = await fetch(repo);
+                const response = await fetch(repo + '/src/programs/solana.programlist.json');
                 const json = (await response.json()) as ProgramListItem;
                 return json;
             } catch {
@@ -97,15 +110,21 @@ export class ProgramListProvider {
     static strategies = {
         [Strategy.GitHub]: new GitHubProgramListResolutionStrategy(),
         [Strategy.Static]: new StaticProgramListResolutionStrategy(),
+        [Strategy.Localhost]: new LocalhostProgramListResolutionStrategy(),
     };
 
-    resolve = async (strategy: Strategy): Promise<ProgramInfoMap> => {
-        const programs = await ProgramListProvider.strategies[strategy].resolve();
-        return programs.reduce((acc, program) => {
-            acc[program.chainId] = program;
-            return acc;
-        }, {} as ProgramInfoMap);
-    }
+    resolve = async (strategy: Strategy): Promise<ProgramListContainer> => {
+        const programListRaw = await ProgramListProvider.strategies[strategy].resolve();
+        const programList = programListRaw.map((program: ProgramInfo) => {
+            const { extensions, ...rest } = program;
+
+            const [repository] = ProgramListProvider.strategies[strategy].repositories;
+            const parserFactory = new ParserFactory(repository);
+            return { extensions, parserFactory, ...rest };
+        });
+
+        return new ProgramListContainer(programList);
+    };
 }
 
 export class ProgramListContainer {
