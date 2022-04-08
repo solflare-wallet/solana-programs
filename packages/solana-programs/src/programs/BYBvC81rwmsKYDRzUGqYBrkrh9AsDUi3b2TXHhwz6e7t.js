@@ -3,7 +3,7 @@ const instruction = {
     3: 'swapTransitive'
 };
 
-((data, { instructionParser }) => {
-    return instructionParser(data, instruction);
+(({ data }, { typeParser }) => {
+    return typeParser(data, instruction);
 })(d, h, m);
 

@@ -66,6 +66,6 @@ const instruction = {
     64: 'placePerpOrder2',
 };
 
-((data, { instructionParser }) => {
-    return instructionParser(data, instruction);
+(({ data }, { typeParser }) => {
+    return typeParser(data, instruction);
 })(d, h, m);

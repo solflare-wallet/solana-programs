@@ -1,5 +1,5 @@
 import { fetch } from 'cross-fetch';
-import tokenlist from './../programs/solana.programlist.json';
+import tokenlist from '../programs/solana.programlist.json';
 import { ParserFactory } from './parserFactory';
 
 export enum ENV {
@@ -36,11 +36,11 @@ export interface ProgramInfo {
     readonly tags?: string[];
     readonly extensions?: ProgramExtension;
     parserFactory?: ParserFactory;
+    parsed?: any;
 }
 
 export interface ProgramExtension {
     readonly website?: string;
-    readonly parserPath?: string;
     readonly github?: string;
     readonly imageUrl?: string;
     readonly description?: string;

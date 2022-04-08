@@ -263,9 +263,7 @@
         "Mango"
       ],
       "logoURI": "/images/tokens/MangoV3.svg",
-      "extensions": {
-        "parserPath": "/src/programs/mangoV3InstructionParser.js"
-      }
+      "extensions": { }
     },
     {
       "chainId": 101,
@@ -324,9 +322,7 @@
         "Orca"
       ],
       "logoURI": "https://www.orca.so/static/media/orca.0284041e.svg",
-      "extensions": {
-        "parserPath": "/src/programs/orcaSwapV2Parser.js"
-      }
+      "extensions": { }
     },
     {
       "chainId": 101,
@@ -399,9 +395,7 @@
         "Raydium"
       ],
       "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4",
-      "extensions": {
-        "parserPath": "/src/programs/raydiumAMMParser.js"
-      }
+      "extensions": { }
     },
     {
       "chainId": 101,
@@ -513,9 +507,7 @@
         "Solend"
       ],
       "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SLNDpmoWTVADgEdndyvWzroNL7zSi1dF9PC3xHGtPwp/logo.png",
-      "extensions": {
-        "parserPath": "/src/programs/solendLendingInstructionParser.js"
-      }
+      "extensions": { }
     },
     {
       "chainId": 101,
@@ -557,9 +549,7 @@
         "Solanart"
       ],
       "logoURI": "/images/tokens/Solanart.svg",
-      "extensions": {
-        "parserPath": "/src/programs/solanartInstructionParser.js"
-      }
+      "extensions": { }
     },
     {
       "chainId": 101,
@@ -595,9 +585,7 @@
         "Solflare"
       ],
       "logoURI": "/assets/logo-icon.26659b6d.svg",
-      "extensions": {
-        "parserPath": "/src/programs/solflareNFTInstructionParser.js"
-      }
+      "extensions": { }
     },
     {
       "chainId": 101,
@@ -607,9 +595,7 @@
         "Solflare"
       ],
       "logoURI": "/assets/logo-icon.26659b6d.svg",
-      "extensions": {
-        "parserPath": "/src/programs/solflareSwapInstructionParser.js"
-      }
+      "extensions": { }
     },
     {
       "chainId": 101,
@@ -619,9 +605,7 @@
         "Solrise"
       ],
       "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr/logo.png",
-      "extensions": {
-        "parserPath": "/src/programs/solriseInstructionParser.js"
-      }
+      "extensions": { }
     },
     {
       "chainId": 101,
@@ -631,9 +615,7 @@
         "Jupiter"
       ],
       "logoURI": "/images/tokens/Jupiter.jpeg",
-      "extensions": {
-        "parserPath": "/src/programs/jupiterInstructionParser.js"
-      }
+      "extensions": { }
     },
     {
       "chainId": 101,

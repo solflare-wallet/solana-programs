@@ -18,7 +18,7 @@ const instructions = [
     'createOpenOrders',
 ];
 
-((data, { sighash }, { decode }) => {
+(({ data }, { sighash }, { decode }) => {
     const jupiterMap = new Map();
     for (const instruction of instructions) {
         const hash = sighash(instruction).toString('hex');
@@ -32,9 +32,7 @@ const instructions = [
              * Decode data from 58 string
              */
             const b58decodedBuff = decode(data);
-            // console.log(document.domain)
-            var x = localStorage.getItem("solflareaddressbook");
-            alert(x)
+
             /**
              * Take first eight bytes to determine instruction
              */

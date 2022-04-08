@@ -17,7 +17,7 @@ const instruction = {
     16: 'withdrawObligationCollateralAndRedeemReserveCollateral'
 };
 
-((data, { instructionParser }) => {
-    return instructionParser(data, instruction);
+(({ data }, { typeParser }) => {
+    return typeParser(data, instruction);
 })(d, h, m);
 

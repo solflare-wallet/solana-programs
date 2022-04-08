@@ -7,7 +7,7 @@ const instruction = {
     11: 'swapBaseOut',
 };
 
-((data, { instructionParser }) => {
-    return instructionParser(data, instruction);
+(({ data }, { typeParser }) => {
+    return typeParser(data, instruction);
 })(d, h, m);
 

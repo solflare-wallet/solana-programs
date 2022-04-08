@@ -8,7 +8,7 @@ const instruction = {
     6: 'updatePrice',
 };
 
-((data, { instructionParser }) => {
-    return instructionParser(data, instruction);
+(({ data }, { typeParser }) => {
+    return typeParser(data, instruction);
 })(d, h, m);
 
