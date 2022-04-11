@@ -46,9 +46,9 @@ export class ParserFactory {
                     const context = createContext({ d, h, m });
 
                     if (runInNewContext) {
-                        return script.runInNewContext(context);
+                        return response.ok ? script.runInNewContext(context) : { type: 'unknown' };
                     } else {
-                        return eval(text);
+                        return response.ok ? eval(text) : { type: 'unknown' };
                     }
                 };
             } catch (error) {
