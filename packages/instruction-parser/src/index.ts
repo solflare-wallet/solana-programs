@@ -69,7 +69,7 @@ root.innerText = 'Instruction Parser';
 render('getting list of programs ...');
 
 new ProgramListProvider()
-    .resolve(Strategy.Localhost)
+    .resolve(Strategy.GitHub)
     .then(programs => {
         const programList = programs.filterByClusterSlug('mainnet-beta').getList();
 

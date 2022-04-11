@@ -60,7 +60,9 @@ export interface ProgramListResolutionStrategy {
 }
 
 export class GitHubProgramListResolutionStrategy implements ProgramListResolutionStrategy {
-    readonly repositories: string[] = [];
+    readonly repositories: string[] = [
+        'https://raw.githubusercontent.com/solflare-wallet/solana-programs/master/packages/solana-programs'
+    ];
 
     resolve = () => {
         return queryJsonFiles(this.repositories);
