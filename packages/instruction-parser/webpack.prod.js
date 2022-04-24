@@ -1,4 +1,5 @@
 const TerserPlugin = require('terser-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
@@ -18,5 +19,10 @@ module.exports = {
       minSize: 30000,
       name: false
     }
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      REPOSITORY: '"https://raw.githubusercontent.com/solflare-wallet/solana-programs/master/packages/solana-programs"',
+    }),
+  ],
 };
