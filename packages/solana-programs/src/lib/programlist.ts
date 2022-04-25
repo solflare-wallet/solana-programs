@@ -116,15 +116,7 @@ export class ProgramListProvider {
     };
 
     resolve = async (strategy: Strategy): Promise<ProgramListContainer> => {
-        const programListRaw = await ProgramListProvider.strategies[strategy].resolve();
-        const programList = programListRaw.map((program: ProgramInfo) => {
-            const { extensions, ...rest } = program;
-
-            const [repository] = ProgramListProvider.strategies[strategy].repositories;
-            const parserFactory = new ParserFactory(repository);
-            return { extensions, parserFactory, ...rest };
-        });
-
+        const programList = await ProgramListProvider.strategies[strategy].resolve();
         return new ProgramListContainer(programList);
     };
 }

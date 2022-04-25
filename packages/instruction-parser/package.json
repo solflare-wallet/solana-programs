@@ -9,6 +9,13 @@
     "instruction",
     "parser"
   ],
+  "prettier": {
+    "useTabs": true,
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 120
+},
   "dependencies": {
     "solana-programs": "^0.0.1",
     "vm-browserify": "^1.1.2"
