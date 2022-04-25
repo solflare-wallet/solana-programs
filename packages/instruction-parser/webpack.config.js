@@ -36,7 +36,7 @@ module.exports = function () {
   const commonConfig = {
     entry: './src/index.ts',
     output: {
-      filename: '[name].bundle.js',
+      filename: '[name].[contenthash:8].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [

@@ -2,7 +2,7 @@
 	"version": "0.0.2",
 	"name": "instruction-parser",
 	"description": "Instruction parser",
-  "homepage": "http://solflare-wallet.github.io/solana-programs",
+  "homepage": "https://solflare-wallet.github.io/solana-programs",
 	"license": "GPL-3.0",
 	"keywords": [
 		"webpack",
