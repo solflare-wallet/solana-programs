@@ -1,4 +1,4 @@
-import { ProgramInfo, ParserFactory } from 'solana-programs';
+import { ProgramInfo, ParserFactory } from '@solflare-wallet/solana-programs';
 
 document.body.style.backgroundColor = '#0f0f0faa';
 document.body.style.color = '#00f000';
