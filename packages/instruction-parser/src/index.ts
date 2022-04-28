@@ -76,12 +76,12 @@ window.addEventListener('message', (event) => {
 		programMap = programs instanceof Map ? programs : new Map(Object.entries(programs));
 		render('waiting for the list of programs ... done');
 
-		render('createing parser factories ...');
+		render('creating parser factories ...');
 		programMap.forEach((program) => {
 			const parserFactory = new ParserFactory(REPOSITORY);
 			program.parserFactory = parserFactory;
 		});
-		render('createing parser factories ... done');
+		render('creating parser factories ... done');
 
 		render('subscribing to message events ...');
 		subscribeToMessages();
