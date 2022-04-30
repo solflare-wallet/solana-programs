@@ -40,15 +40,20 @@ function subscribeToMessages() {
 					render('parsing data ... done');
 				} else {
 					if (program.parserFactory) {
-						const { parserFactory } = program;
+						const { parserFactory, hasParser } = program;
 						render('creating parser ...');
 
 						try {
-							const parser = await parserFactory.createParser(`/src/programs/${programId}.js`, false);
-							parserMap.set(programId, parser);
-							render('creating parser ... done');
+							if (hasParser) {
+								const parser = await parserFactory.createParser(`/src/programs/${programId}.js`, false);
+								parserMap.set(programId, parser);
+								render('creating parser ... done');
+								program.parsed = parser({ accounts, data });
+							} else {
+								render('program does not have a parser');
+								program.parsed = { type: 'unknown' };
+							}
 
-							program.parsed = parser({ accounts, data });
 							render('parsing data ... done');
 						} catch (error) {
 							render('creating parser ... failed');

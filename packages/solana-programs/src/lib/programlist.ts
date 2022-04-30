@@ -35,6 +35,7 @@ export interface ProgramInfo {
     readonly logoURI?: string;
     readonly tags?: string[];
     readonly extensions?: ProgramExtension;
+    readonly hasParser?: boolean;
     parserFactory?: ParserFactory;
     parsed?: any;
 }
