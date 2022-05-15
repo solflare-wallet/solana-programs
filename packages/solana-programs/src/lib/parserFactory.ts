@@ -11,7 +11,7 @@ const sighash = (ixName: string): Buffer => {
     return Buffer.from(sha256.digest(preImage)).slice(0, 8);
 };
 
-const typeParser = (data: any, instruction: any) => {
+const typeParser = (data: string, instruction: any) => {
     const b58decodedBuff = decode(data);
     let instructionType;
 
@@ -32,23 +32,29 @@ export class ParserFactory {
 
     async createParser(parserPath: string, runInNewContext = true) {
         if (this.repository) {
-            try {
+            try { // fetch parser from repository
                 const response = await fetch(this.repository + parserPath);
                 const text = await response.text();
                 const script = new Script(text);
                 const helpers = { typeParser, sighash };
                 const modules = { bufferLayout, decode, snakeCase, sha256 };
 
-                return (data: any) => {
+                // return parser function
+                return (data: unknown) => {
                     const d = data;
                     const h = helpers;
                     const m = modules;
                     const context = createContext({ d, h, m });
 
-                    if (runInNewContext) {
-                        return response.ok ? script.runInNewContext(context) : { type: 'unknown' };
-                    } else {
-                        return response.ok ? eval(text) : { type: 'unknown' };
+                    try { // evaluate script
+                        if (runInNewContext) {
+                            return response.ok ? script.runInNewContext(context) : { type: 'unknown' };
+                        } else {
+                            return response.ok ? eval(text) : { type: 'unknown' };
+                        }
+                    } catch (error) {
+                        console.warn(error);
+                        return { type: 'unknown' };
                     }
                 };
             } catch (error) {
