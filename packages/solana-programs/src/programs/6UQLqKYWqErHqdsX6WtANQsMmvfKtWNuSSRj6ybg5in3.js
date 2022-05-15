@@ -42,28 +42,27 @@ const accountsMap = {
         writable: true,
         signer: false,
     }]
-}
+};
 
-    (({ accounts, data }, { typeParser }, { bufferLayout, decode }) => {
-        const { type } = typeParser(data, instruction);
+(({ accounts, data }, { typeParser }, { bufferLayout, decode }) => {
+    const { type } = typeParser(data, instruction);
 
-        const ixLayouts = {
-            'setProfileNFT': bufferLayout.struct([
-                bufferLayout.u8('instructionType'),
-            ]),
-            'unsetProfileNFT': bufferLayout.struct([
-                bufferLayout.u8('instructionType')
-            ])
-        };
+    const ixLayouts = {
+        'setProfileNFT': bufferLayout.struct([
+            bufferLayout.u8('instructionType'),
+        ]),
+        'unsetProfileNFT': bufferLayout.struct([
+            bufferLayout.u8('instructionType')
+        ])
+    };
 
-        const b58decodedBuff = decode(data);
-        const layout = ixLayouts[type];
-        const parsedIx = layout.decode(b58decodedBuff);
-        const info = { ...parsedIx };
+    const b58decodedBuff = decode(data);
+    const layout = ixLayouts[type];
+    const parsedIx = layout.decode(b58decodedBuff);
+    const info = { ...parsedIx };
 
-        const ixAccounts = accountsMap[type];
-        ixAccounts.forEach((acc, index) => info[acc.name] = accounts[index]);
+    const ixAccounts = accountsMap[type];
+    ixAccounts.forEach((acc, index) => info[acc.name] = accounts[index]);
 
-        return { type, info }
-    })(d, h, m);
-
+    return { type, info }
+})(d, h, m);
