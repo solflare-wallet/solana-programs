@@ -1,11 +1,11 @@
 {
   "name": "@solflare-wallet/solana-programs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Solana Program Registry",
   "main": "dist/main/index.js",
   "typings": "dist/main/index.d.ts",
   "module": "dist/module/index.js",
-  "repository": "https://github.com/solana-labs/token-list",
+  "repository": "https://github.com/solflare-wallet/solana-programs",
   "license": "Apache",
   "keywords": [],
   "scripts": {
