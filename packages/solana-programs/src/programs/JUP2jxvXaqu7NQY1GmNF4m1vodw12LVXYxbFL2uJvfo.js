@@ -36,7 +36,8 @@ const instructions = [
             /**
              * Take first eight bytes to determine instruction
              */
-            const type = jupiterMap.get(b58decodedBuff.slice(0, 8).toString('hex'));
+            const hash = Buffer.from(b58decodedBuff).slice(0, 8).toString('hex');
+            const type = jupiterMap.get(hash);
 
             return { type };
         } catch (error) {
