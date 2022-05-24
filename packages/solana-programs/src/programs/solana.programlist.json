@@ -390,7 +390,7 @@
     {
       "chainId": 101,
       "address": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
-      "name": "Raydium AMM Program",
+      "name": "Liquidity Pool AMM",
       "tags": [
         "Raydium"
       ],
@@ -400,7 +400,7 @@
     {
       "chainId": 101,
       "address": "9HzJyW1qZsEiSfMUf6L2jo3CcTKAyBmSyKdwQeYisHrC",
-      "name": "Raydium IDO Program",
+      "name": "Raydium AcceleRaytor",
       "tags": [
         "Raydium"
       ],
@@ -408,8 +408,18 @@
     },
     {
       "chainId": 101,
+      "address": "5quBtoiQqxF9Jv6KYKctB59NT3gtJD2Y65kdnB1Uev3h",
+      "name": "Stable Swap AMM",
+      "tags": [
+        "Raydium"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4",
+      "hasParser": true
+    },
+    {
+      "chainId": 101,
       "address": "RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr",
-      "name": "Raydium Liquidity Pool Program v1",
+      "name": "Raydium Liquidity Pool v1",
       "tags": [
         "Raydium"
       ],
@@ -418,7 +428,7 @@
     {
       "chainId": 101,
       "address": "27haf8L6oxUeXrHrgEgsexjSY5hbVUWEmvv9Nyxg8vQv",
-      "name": "Raydium Liquidity Pool Program v2",
+      "name": "Raydium Liquidity Pool v2",
       "tags": [
         "Raydium"
       ],
@@ -427,25 +437,27 @@
     {
       "chainId": 101,
       "address": "EhhTKczWMGQt46ynNeRX1WfeagwwJd7ufHvCDjRxjo5Q",
-      "name": "Raydium Staking Program",
+      "name": "Raydium Staking",
       "tags": [
         "Raydium"
       ],
-      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4"
+      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4",
+      "hasParser": true
     },
     {
       "chainId": 101,
       "address": "9KEPoZmtHUrBbhWN1v1KWLMkkvwY6WLtAVUCPRtRjP4z",
-      "name": "Raydium Staking Program",
+      "name": "Raydium Farm Staking",
       "tags": [
         "Raydium"
       ],
-      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4"
+      "logoURI": "https://avatars.githubusercontent.com/u/78411976?s=200&v=4",
+      "hasParser": true
     },
     {
       "chainId": 101,
       "address": "routeUGWgWzqBWFcrCfv8tritsqukccJPu3q5GPP3xS",
-      "name": "Raydium Staking Program",
+      "name": "Raydium AMM Routing",
       "tags": [
         "Raydium"
       ],
