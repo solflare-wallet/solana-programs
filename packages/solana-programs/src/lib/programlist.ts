@@ -2,12 +2,6 @@ import { fetch } from 'cross-fetch';
 import tokenlist from '../programs/solana.programlist.json';
 import { ParserFactory } from './parserFactory';
 
-export enum ENV {
-    MainnetBeta = 101,
-    Testnet = 102,
-    Devnet = 103,
-}
-
 export enum Strategy {
     GitHub = 'GitHub',
     Static = 'Static',
@@ -29,7 +23,7 @@ export interface ProgramListItem {
 }
 
 export interface ProgramInfo {
-    readonly chainId: number;
+    readonly platform: string;
     readonly address: string;
     readonly name: string;
     readonly logoURI?: string;
@@ -48,12 +42,6 @@ export interface ProgramExtension {
 }
 
 export type ProgramInfoMap = { [address: string]: ProgramInfo };
-
-export const CLUSTER_SLUGS: { [chain: string]: ENV } = {
-    'mainnet-beta': ENV.MainnetBeta,
-    'testnet': ENV.Testnet,
-    'devnet': ENV.Devnet,
-}
 
 export interface ProgramListResolutionStrategy {
     readonly repositories: string[];
@@ -131,30 +119,9 @@ export class ProgramListContainer {
         );
     };
 
-    filterByChainId = (chainId: number | ENV) => {
-        return new ProgramListContainer(
-            this.programList.filter((item) => item.chainId === chainId)
-        );
-    };
-
-    excludeByChainId = (chainId: number | ENV) => {
-        return new ProgramListContainer(
-            this.programList.filter((item) => item.chainId !== chainId)
-        );
-    };
-
     excludeByTag = (tag: string) => {
         return new ProgramListContainer(
             this.programList.filter((item) => !(item.tags || []).includes(tag))
-        );
-    };
-
-    filterByClusterSlug = (slug: string) => {
-        if (slug in CLUSTER_SLUGS) {
-            return this.filterByChainId(CLUSTER_SLUGS[slug]);
-        }
-        throw new Error(
-            `Unknown slug: ${slug}, please use one of ${Object.keys(CLUSTER_SLUGS)}`
         );
     };
 

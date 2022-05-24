@@ -7,7 +7,7 @@ module.exports = {
   watch: true,
   plugins: [
     new webpack.DefinePlugin({
-      REPOSITORY: '"https://raw.githubusercontent.com/solflare-wallet/solana-programs/master/packages/solana-programs"',
+      REPOSITORY: '"http://localhost:8080"',
     }),
   ],
   devServer: {
