@@ -486,7 +486,8 @@
       "name": "Serum Dex Program v1",
       "tags": [
         "Serum"
-      ]
+      ],
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt/logo.png"
     },
     {
       "chainId": 101,
@@ -494,7 +495,8 @@
       "name": "Serum Dex Program v2",
       "tags": [
         "Serum"
-      ]
+      ],
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt/logo.png"
     },
     {
       "chainId": 101,
@@ -502,7 +504,9 @@
       "name": "Serum Dex Program v3",
       "tags": [
         "Serum"
-      ]
+      ],
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt/logo.png",
+      "hasParser": true
     },
     {
       "chainId": 101,
@@ -510,7 +514,8 @@
       "name": "Serum Swap Program",
       "tags": [
         "Serum"
-      ]
+      ],
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt/logo.png"
     },
     {
       "chainId": 101,
