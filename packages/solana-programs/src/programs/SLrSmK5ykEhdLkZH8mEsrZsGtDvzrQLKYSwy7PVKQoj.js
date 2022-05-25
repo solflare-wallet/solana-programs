@@ -25,10 +25,33 @@ const instruction = {
     24: 'exchangeDirectAMM',
     25: 'verifyCreditAccountBalance',
     26: 'exchangeRouteIn',
-    27: 'exchangeRouteOut'
+    27: 'exchangeRouteOut',
+    28: 'depositToMango',
+    29: 'initMangoAccount',
+    30: 'withdrawFromMango',
+    31: 'placePerpOrderOnMango',
+    32: 'cancelPerpOrderOnMango',
+    33: 'settleFeesOnMango',
+    34: 'settleMangoAccount',
+    35: 'prepareMangoForWithdrawalReduce',
+    36: 'prepareMangoForWithdrawalWithdraw',
+    37: 'fixCreditAccount',
+    38: 'initFundMeta',
+    39: 'initMangoAdvancedOrders',
+    40: 'modifyMangoAccountName',
+    41: 'addMangoAdvancedOrder',
+    42: 'removeMangoAdvancedOrder',
+    43: 'mangoSettleAll',
+    44: 'prepareMangoForWithdrawalAdvancedReduce',
+    45: 'closeMangoAccount',
+    46: 'lockInvestorAccount',
+    47: 'unlockInvestorAccount',
+    48: 'partialSettle',
+    49: 'setGuard',
+    50: 'approveGuard',
+    51: 'revokeGuard',
 };
 
 (({ data }, { typeParser }) => {
     return typeParser(data, instruction);
 })(d, h, m);
-
