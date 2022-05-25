@@ -612,7 +612,17 @@
     {
       "chainId": 101,
       "address": "SLrSmK5ykEhdLkZH8mEsrZsGtDvzrQLKYSwy7PVKQoj",
-      "name": "Solrise program",
+      "name": "Solrise main program",
+      "tags": [
+        "Solrise"
+      ],
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr/logo.png",
+      "hasParser": true
+    },
+    {
+      "chainId": 101,
+      "address": "SLrS51D6WodbLt677nG2HozemSnKURuhA4X1QKt4HcU",
+      "name": "Solrise stake program",
       "tags": [
         "Solrise"
       ],
