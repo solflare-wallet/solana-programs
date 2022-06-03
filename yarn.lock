@@ -760,6 +760,17 @@
   dependencies:
     buffer "~6.0.3"
 
+"@solflare-wallet/solana-programs@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@solflare-wallet/solana-programs/-/solana-programs-0.0.2.tgz#12fbac281e707c19e3df0b44ae1b166fc34826d0"
+  integrity sha512-hBTaFxLnvod9n2gNiHG/0NIpPRxeou5m47BUrMJpbDZ0WGAy70tXfD955pPy/boDKM42FT7mrHi8xM0hyAiOGg==
+  dependencies:
+    "@solana/buffer-layout" "^4.0.0"
+    bs58 "^5.0.0"
+    cross-fetch "^3.1.5"
+    js-sha256 "^0.9.0"
+    snake-case "^3.0.4"
+
 "@szmarczak/http-timer@^4.0.5":
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-4.0.6.tgz#b4a914bb62e7c272d4e5989fe4440f812ab1d807"
@@ -3013,9 +3024,9 @@ events@^3.2.0:
   integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
 
 eventsource@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.1.0.tgz#00e8ca7c92109e94b0ddf32dac677d841028cfaf"
-  integrity sha512-VSJjT5oCNrFvCS6igjzPAt5hBzQ2qPBFIbJ03zLI9SE0mxwZpMw6BfJrbFHm1a141AavMEB8JHmBhWAd66PfCg==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.1.1.tgz#4544a35a57d7120fba4fa4c86cb4023b2c09df2f"
+  integrity sha512-qV5ZC0h7jYIAOhArFJgSfdyz6rALJyb270714o7ZtNnw2WSJ+eexhKtE0O8LYPRsHZHf2osHKZBxGPvm3kPkCA==
   dependencies:
     original "^1.0.0"
 
