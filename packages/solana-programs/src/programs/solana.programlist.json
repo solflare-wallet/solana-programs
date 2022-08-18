@@ -647,6 +647,16 @@
     },
     {
       "chainId": 101,
+      "address": "JUP3c2Uh3WA4Ng34tw6kPd2G4C5BB21Xo36Je1s32Ph",
+      "name": "Jupiter Aggregator v3",
+      "tags": [
+        "Jupiter"
+      ],
+      "logoURI": "/images/tokens/Jupiter.jpeg",
+      "hasParser": true
+    },
+    {
+      "chainId": 101,
       "address": "M2mx93ekt1fmXSVkTrUL9xVFHkmME8HTUi5Cyc5aF7K",
       "name": "Magic Eden Program",
       "tags": [
