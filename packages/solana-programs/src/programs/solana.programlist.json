@@ -181,15 +181,6 @@
     },
     {
       "chainId": 101,
-      "address": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
-      "name": "Token Metadata Program",
-      "tags": [
-        "Native"
-      ],
-      "logoURI": "https://avatars.githubusercontent.com/u/35608259?s=200&v=4"
-    },
-    {
-      "chainId": 101,
       "address": "vau1zxA2LbssAUEF7Gpw91zMM1LvXrvpzJtmZ58rPsn",
       "name": "Token Vault Program",
       "tags": [
@@ -287,7 +278,18 @@
       "name": "Metaplex Program",
       "tags": [
         "Metaplex"
-      ]
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/84874526?s=200&v=4"
+    },
+    {
+      "chainId": 101,
+      "address": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+      "name": "Token Metadata Program",
+      "tags": [
+        "Metaplex"
+      ],
+      "logoURI": "https://avatars.githubusercontent.com/u/84874526?s=200&v=4",
+      "hasParser": true
     },
     {
       "chainId": 101,
